@@ -9,8 +9,12 @@ const group = require('./groups/group');
 
 require('./db');
 
-http.listen(3000, function () {
-    console.log('3000');
+// http.listen(3000, function () {
+//     console.log('3000');
+// });
+
+http.listen(process.env.PORT || 3000, function(){
+    console.log('listening on', http.gulenkocontactsapp().herokuapp.com);
 });
 
 app.use(bodyParser.json());
