@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node ./bin/www",
     "postinstall": "./node_modules/.bin/bower install && ./node_modules/.bin/grunt"
   },
   "author": "",
@@ -20,6 +20,5 @@
   },
   "devDependencies": {
     "nodemon": "^1.14.7"
-    
   }
 }
