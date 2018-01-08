@@ -1,0 +1,128 @@
+li {
+    list-style-type: none;
+    width: 485px;
+    border: 2px solid blue;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+span {
+    float: right;
+}
+
+form {
+    width: 500px;
+}
+
+input {
+    margin: 5px;
+}
+
+.container {
+    /*display: flex;*/
+    flex-direction: row;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul form {
+    min-height: 150px;
+}
+
+.form {
+    margin: 10px;
+    padding: 10px;
+}
+
+.vertical {
+    /*display: flex;*/
+    flex-direction: column;
+}
+
+input[type=submit], button {
+    float: right;
+    width: 100%;
+}
+
+input[type=text], input[type=tel] {
+    float: right;
+    width: 100%;
+}
+
+input[type=checkbox], label {
+    display: inline;
+    margin-left: 5px;
+}
+
+.test {
+    background: lightgray;
+}
+
+li:hover {
+    background: aliceblue;
+}
+
+.checkBoxEdit {
+    color: rebeccapurple;
+}
+
+.hide {
+    display: none;
+}
+
+form ~ div {
+    display: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+span {
+    margin-left: 5px;
+}
+.buttons{
+    /*border: solid;*/
+    border: solid blue 1px;
+    background-color: dodgerblue;
+    color:white;
+}
+.buttons:hover{
+    border: solid blue 1px;
+    background-color: rgba(30,144,255,0.9);
+    color:white;
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+    margin: 15px;
+}
+.btn-danger{
+    color: #fff;
+    background-color: #009cea;
+    border-color: #3aa4d4;
+}
+.btn-warning {
+    color: #fff;
+    background-color: #614ef0;
+    border-color: #3682ee;
+}
+.btn-danger:hover{
+    color: #fff;
+    background-color: #009cea;
+    opacity:0.8;
+    border-color: #3aa4d4;
+}
+.btn-warning:hover {
+    color: #fff;
+    background-color: #614ef0;
+    opacity:0.8;
+    border-color: #3682ee;
+}
+.h3{
+    font-weight: bolder;
+}

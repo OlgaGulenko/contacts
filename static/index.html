@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="/style.css" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="contacts.js"></script>
+    <script src="groups.js"></script>
+    <title>Contacts app</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark margins">
+        <div class="container">
+            <a class="navbar-brand buttons" id="hideFormContacts"><i class="fa fa-plus" aria-hidden="true"></i> Add contact</a>
+            <a class="navbar-brand buttons" id="hideFormGroups"><i class="fa fa-plus" aria-hidden="true"></i> Add group</a>
+        </div>
+    </nav>
+</header>
+<div class="container">
+    <div class="form">
+        <div class="vertical">
+            <div id="groupForm">
+                <h3>Groups</h3>
+                <form class="hide">
+                    <input id="title" type="text" class="form-control" placeholder="Title" required="">
+                    <input id="groupSubmit" type="submit" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+        <div>
+            <ul id="groups">
+                <li id="allContacts" data-group="All">All contacts</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="form contacts">
+        <div class="vertical">
+            <div id="contactsForm">
+                <h3>Contacts</h3>
+                <form class="hide">
+                    <input id="name" type="text" class="form-control" placeholder="Name" required="">
+                    <input id="phone" type="tel" class="form-control" placeholder="Phone" required=""
+                           onkeypress="return isNumberKey(event)">
+                    <input id="submit" type="submit" class="btn btn-primary">
+                </form>
+            </div>
+            <div id="checkBoxes" class="hide"></div>
+            <div>
+                <ul id="contacts"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
